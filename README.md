@@ -5,7 +5,7 @@ un servicio publicado en la página del SAT, el servicio pretende proveer una
 alternativa de consulta que requiera verificar el estado de un comprobante en las 
 Bases de Datos del SAT
 
-Mensajes de Respuesta 
+# Mensajes de Respuesta 
 Los mensajes de respuesta que arroja el servicio de consulta de CFDI´s incluyen la 
 descripción del resultado de la operación que corresponden a la siguiente 
 clasificación: 
