@@ -2,17 +2,14 @@
 using System.ServiceModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Jaeger.SAT.CFDI.Consulta.Interfaces;
-using Jaeger.SAT.CFDI.Consulta.Entities;
 
-namespace Jaeger.SAT.CFDI.Consulta.Services {
+namespace Jaeger.SAT.CFDI.API.Consulta {
 
     [DebuggerStepThroughAttribute()]
     [GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     internal partial class ConsultaCFDIServiceClient : ClientBase<IConsultaCFDIService>, IConsultaCFDIService {
 
-        public ConsultaCFDIServiceClient() {
-        }
+        public ConsultaCFDIServiceClient() { }
 
         public ConsultaCFDIServiceClient(string endpointConfigurationName) :
                 base(endpointConfigurationName) {

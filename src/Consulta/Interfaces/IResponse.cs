@@ -1,4 +1,4 @@
-﻿using Jaeger.SAT.CFDI.Consulta.Entities;
+﻿using Jaeger.SAT.CFDI.API.Consulta;
 
 namespace Jaeger.SAT.CFDI.Consulta.Interfaces {
     public interface IResponse {

@@ -11,9 +11,8 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Security;
-using Jaeger.SAT.CFDI.Consulta.Entities;
+using Jaeger.SAT.CFDI.API.Consulta;
 using Jaeger.SAT.CFDI.Consulta.Interfaces;
-using Jaeger.SAT.CFDI.Consulta.Services;
 
 namespace Jaeger.SAT.CFDI.Consulta.Abstracts {
     public abstract class ServiceCFDI : ServiceBase {

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Jaeger.SAT.CFDI.Consulta.Interfaces {
+namespace Jaeger.SAT.CFDI.API.Consulta {
     public interface IAcuse {
         string CodigoEstatus { get; set; }
         string EsCancelable { get; set; }

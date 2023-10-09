@@ -4,6 +4,8 @@
 ***
 *********************************************************************************************************
 Revisiones:
+09/10/2023:
+- cambios de namespace
 05/04/2023: creación de clase ResponseBuilder para crear la respuesta del servicio.
 11/04/2023
 - se aumenta el tiempo de espera para la respuesta a 10 minutos para evitar error en la consulta

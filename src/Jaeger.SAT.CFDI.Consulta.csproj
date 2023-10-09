@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>api.ico</ApplicationIcon>
+    <ApplicationIcon>sat30px.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstracts\ServiceBase.cs" />
-    <Compile Include="Abstracts\ServiceCFDI.cs" />
+    <Compile Include="Consulta\Abstracts\ServiceBase.cs" />
+    <Compile Include="Consulta\Abstracts\ServiceCFDI.cs" />
     <Compile Include="Builder\IRequestBuilder.cs" />
     <Compile Include="Builder\IResponseBuilder.cs" />
     <Compile Include="Builder\RequestBuilder.cs" />
     <Compile Include="Builder\ResponseBuilder.cs" />
-    <Compile Include="Consulta\Entities\Acuse.cs" />
-    <Compile Include="Interfaces\IAcuse.cs" />
-    <Compile Include="Consulta\IConsultaCFDIService.cs" />
-    <Compile Include="Consulta\IConsultaCFDIServiceChannel.cs" />
-    <Compile Include="Interfaces\IRequest.cs" />
-    <Compile Include="Interfaces\IResponse.cs" />
-    <Compile Include="Interfaces\IStatus.cs" />
-    <Compile Include="Request.cs" />
-    <Compile Include="Response.cs" />
-    <Compile Include="Consulta\ConsultaCFDIServiceClient.cs" />
-    <Compile Include="Services\Messages.cs" />
-    <Compile Include="Services\Status.cs" />
-    <Compile Include="Log.cs" />
+    <Compile Include="API\Consulta\Acuse.cs" />
+    <Compile Include="API\Consulta\IAcuse.cs" />
+    <Compile Include="API\Consulta\IConsultaCFDIService.cs" />
+    <Compile Include="API\Consulta\IConsultaCFDIServiceChannel.cs" />
+    <Compile Include="Consulta\Interfaces\IRequest.cs" />
+    <Compile Include="Consulta\Interfaces\IResponse.cs" />
+    <Compile Include="Consulta\Interfaces\IStatus.cs" />
+    <Compile Include="Consulta\Entities\Request.cs" />
+    <Compile Include="Consulta\Entities\Response.cs" />
+    <Compile Include="API\Consulta\ConsultaCFDIServiceClient.cs" />
+    <Compile Include="Consulta\Services\Messages.cs" />
+    <Compile Include="Consulta\Services\Status.cs" />
+    <Compile Include="Helpers\Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -76,6 +76,7 @@
     <Content Include="api.ico" />
     <Content Include="readme.txt" />
     <Content Include="changes.txt" />
+    <Content Include="sat30px.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

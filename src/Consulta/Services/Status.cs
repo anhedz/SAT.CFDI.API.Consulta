@@ -1,12 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Jaeger.SAT.CFDI.Consulta.Abstracts;
-using Jaeger.SAT.CFDI.Consulta.Entities;
+using Jaeger.SAT.CFDI.API.Consulta;
 using Jaeger.SAT.CFDI.Consulta.Interfaces;
 
 namespace Jaeger.SAT.CFDI.Consulta.Services {
     public class Status : ServiceCFDI, IStatus {
-        public Status() : base("https://consultaqr.facturaelectronica.sat.gob.mx/ConsultaCFDIService.svc") {
-        }
+        public Status() : base("https://consultaqr.facturaelectronica.sat.gob.mx/ConsultaCFDIService.svc") { }
 
         public string Version {
             get { return "1.4"; }
@@ -33,14 +32,14 @@ namespace Jaeger.SAT.CFDI.Consulta.Services {
         }
 
         public IResponse Execute1(IRequest request) {
-            var d0 = this.Request(request.EmisorRFC, request.ReceptorRFC, request.Total, request.FolioFiscal);
-            IResponse response = new Response().WithAcuse(d0).WithVersion(this.Version).WithMessage(this.Message(d0.CodigoEstatus));
+            var acuse = this.Request(request.EmisorRFC, request.ReceptorRFC, request.Total, request.FolioFiscal);
+            IResponse response = new Response().WithAcuse(acuse).WithVersion(this.Version).WithMessage(this.Message(acuse.CodigoEstatus));
             return response;
         }
 
         public async Task<IResponse> Execute2(IRequest request) {
-            var d0 = await this.ConsultaCFDIServiceAsync(this.GetExpresionImpresa(request));
-            IResponse response = new Response().WithAcuse(d0).WithVersion(this.Version).WithMessage(this.Message(d0.CodigoEstatus));
+            var acuse = await this.ConsultaCFDIServiceAsync(this.GetExpresionImpresa(request));
+            IResponse response = new Response().WithAcuse(acuse).WithVersion(this.Version).WithMessage(this.Message(acuse.CodigoEstatus));
             return response;
         }
 
@@ -48,7 +47,7 @@ namespace Jaeger.SAT.CFDI.Consulta.Services {
             if (string.IsNullOrEmpty(codigo))
                 return string.Empty;
             var s1 = int.Parse(codigo);
-            
+
             return this.Message(s1);
         }
 

@@ -3,9 +3,8 @@ using System.Runtime.Serialization;
 using System.Diagnostics;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
-using Jaeger.SAT.CFDI.Consulta.Interfaces;
 
-namespace Jaeger.SAT.CFDI.Consulta.Entities {
+namespace Jaeger.SAT.CFDI.API.Consulta {
     [DebuggerStepThroughAttribute()]
     [GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [DataContractAttribute(Name = "Acuse", Namespace = "http://schemas.datacontract.org/2004/07/Sat.Cfdi.Negocio.ConsultaCfdi.Servicio")]

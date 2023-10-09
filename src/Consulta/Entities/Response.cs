@@ -1,5 +1,5 @@
 ﻿using Jaeger.SAT.CFDI.Consulta.Interfaces;
-using Jaeger.SAT.CFDI.Consulta.Entities;
+using Jaeger.SAT.CFDI.API.Consulta;
 using Jaeger.SAT.CFDI.Consulta.Builder;
 
 namespace Jaeger.SAT.CFDI.Consulta {

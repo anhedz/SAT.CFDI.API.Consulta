@@ -1,9 +1,8 @@
 ﻿using System.Threading.Tasks;
 using System.ServiceModel;
 using System.CodeDom.Compiler;
-using Jaeger.SAT.CFDI.Consulta.Entities;
 
-namespace Jaeger.SAT.CFDI.Consulta.Interfaces {
+namespace Jaeger.SAT.CFDI.API.Consulta {
     [GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [ServiceContractAttribute(ConfigurationName = "IConsultaCFDIService")]
     internal interface IConsultaCFDIService {
