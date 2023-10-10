@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Jaeger.SAT.CFDI.API.Properties;
+using Jaeger.SAT.CFDI.Properties;
 
 namespace Jaeger.SAT.CFDI.Consulta.Services {
     internal class Messages {
