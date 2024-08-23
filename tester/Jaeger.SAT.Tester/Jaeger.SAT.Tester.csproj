@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SAT.Services.CFDI.Consulta\Jaeger.SAT.CFDI.Consulta.csproj">
-      <Project>{c9af1772-2f04-458e-bbde-922830b76599}</Project>
-      <Name>Jaeger.SAT.CFDI.Consulta</Name>
+    <ProjectReference Include="..\..\src\Jaeger.SAT.CFDI.API.Consulta.csproj">
+      <Project>{d3839ac9-4f2c-42f2-8cc4-04d3477baa19}</Project>
+      <Name>Jaeger.SAT.CFDI.API.Consulta</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9AF1772-2F04-458E-BBDE-922830B76599}</ProjectGuid>
+    <ProjectGuid>{D3839AC9-4F2C-42F2-8CC4-04D3477BAA19}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Jaeger.SAT.CFDI</RootNamespace>

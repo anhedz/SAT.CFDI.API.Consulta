@@ -29,9 +29,9 @@ namespace Jaeger.SAT.CFDI.Consulta.Abstracts {
         public BasicHttpBinding GetBinding() {
             var binding = new BasicHttpBinding {
                 ReceiveTimeout = new TimeSpan(0, 1, 0),
-                SendTimeout = new TimeSpan(0, 5, 0),
-                OpenTimeout = new TimeSpan(0, 5, 0),
-                CloseTimeout = new TimeSpan(0, 5, 0),
+                SendTimeout = new TimeSpan(0, 15, 0),
+                OpenTimeout = new TimeSpan(0, 15, 0),
+                CloseTimeout = new TimeSpan(0, 15, 0),
                 MaxReceivedMessageSize = 2147483647,
                 BypassProxyOnLocal = true,
                 UseDefaultWebProxy = true
